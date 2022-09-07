@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<style>
+    body {
+        background-color: #000;
+    }
+
+    #text {
+        text-transform: uppercase;
+        font-family: sans-serif;
+        margin-top: 50vh;
+        text-align: center;
+        animation: text 2s, 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        letter-spacing: 10px;
+        color: white;
+    }
+
+    /* #usha:hover {
+        letter-spacing: 20px;
+    } */
+
+    @keyframes text {
+        0% {
+            letter-spacing: 10px;
+        }
+
+        80% {
+            letter-spacing: 20px;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+</style>
+
+<body>
+    <p id="text"></p>
+    <script>
+        let username;
+        username = prompt("isming nima");
+        console.log(username);
+        document.getElementById("text").innerHTML = username;
+    </script>
+</body>
+
+</html>
