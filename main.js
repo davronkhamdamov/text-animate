@@ -1,16 +1,11 @@
-let array = [12, 2, 3, 4, 35, 5, 46];
-// // console.log(array.concat(32));
-// // console.log(array.join(' '));
-// for (let i = 0; i < array.length; i++) {
-//   console.log(array[i]);
-//  }
-// array.forEach((el, name, arr) => {
-//   console.log(name);
-// });
-let b = [];
-for (let i = 0; i < array.length; i++) {
-  if (array[i] > 3) {
-    b.push(array[i]);
-  }
+let time = Number(prompt('kun boshidam  qancha sekund otdi'));
+function name1(time) {
+  let x = time / 60;
+  let y = time / 3600;
+  let result1 = x.toString();
+  let result2 = y.toString();
+  let result = `Kun boshidan ${result1} minut o'tdi:
+Kun boshidan  ${result2} soat o'tdi`;
+  return result;
 }
-console.log(b);
+alert(name1(time));

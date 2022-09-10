@@ -7,57 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js</title>
 </head>
-<style>
-    body {
-        background-color: #000;
-    }
-
-    #text {
-        text-transform: uppercase;
-        font-family: sans-serif;
-        margin-top: 40vh;
-        text-align: center;
-        animation: text 2s, 3s;
-        animation-delay: 3s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in-out;
-        letter-spacing: 5px;
-        color: white;
-        font-weight: 700;
-        font-size: 18px
-    }
-
-    @keyframes text {
-        0% {
-            letter-spacing: 5px;
-        }
-
-        80% {
-            letter-spacing: 20px;
-        }
-
-        100% {
-            opacity: 0;
-        }
-    }
-
-    .trext {
-        font-size: 12px;
-        color: rgba(255, 255, 255 0.5);
-        text-align: end;
-        margin-top: 50vh;
-    }
-</style>
 
 <body>
-    <p id="text"></p>
-    <p class="trext">Powered by Davron</p>
-    <script>
-        let username;
-        username = prompt("uchqun");
-        console.log(username);
-        document.getElementById("text").innerHTML = username;
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
